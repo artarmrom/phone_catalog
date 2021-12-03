@@ -1,0 +1,62 @@
+.top-modal-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.create-phone-title {
+    margin-top: 5%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #060910;
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+.create-phone-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.create-phone-title-input {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #31394D;
+    margin-bottom: 5px;
+    width: auto;
+    cursor: default;
+    padding-top: 0;
+    padding-right: 10px;
+}
+
+.buttons-group {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons-group > button {
+    font-size: 14px!important;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-top: 5%;
+}
+
+@media screen and (min-width:360px) and (max-width:480px ) {
+    #modal-div {
+        width: 100%;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: stretch;
+    }
+}

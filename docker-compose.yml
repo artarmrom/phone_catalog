@@ -1,0 +1,20 @@
+version: '3'
+services:
+  client:
+    container_name: client_phone_catalog
+    depends_on:
+      - api
+    build:
+      context: app
+      dockerfile: Dockerfile
+    image: phone_catalog_client:0.2
+    ports:
+      - 3000:3000
+  api:
+    container_name: api_phone_catalog
+    build:
+      context: api
+      dockerfile: Dockerfile
+    image: phone_catalog_api:0.5
+    ports:
+      - 9000:9000
