@@ -1,4 +1,4 @@
-let express = require('express'); //TODO: averiguar que hace cada importacion
+let express = require('express');
 let session = require('express-session');
 let path = require('path');
 const routes = require('./routes/phone.js');
